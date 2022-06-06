@@ -1,0 +1,67 @@
+html {
+  width: 900px;
+  height: 700px;
+}
+.App {
+  text-align: center;
+  font-family: 'poppins';
+  width: 500px;
+  height: 500px;
+}
+
+.dFlexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  text-decoration: underline #772331;
+}
+
+.buttonStart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #772331;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.cursor {
+  height: 20px;
+  width: 20px;
+  border: 3px solid #772331;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.circleClick {
+  transform: scale(2);
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.videoPLayer {
+  border: 3px solid #772331;
+  border-radius: 5px;
+  width: 500px;
+  height: max-content;
+  margin-bottom: 2rem;
+}

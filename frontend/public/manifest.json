@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "rec0rder",
+	"author": "Acu",
+	"version": "1.0.1",
+	"description": "Screen Rec0rder",
+	"icons": {
+		"16": "16.ico",
+		"48": "48.ico",
+		"128": "128.ico"
+	},
+	"background": {
+		"service_worker": "server.js"
+	},
+	"permissions": ["storage"],
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
