@@ -1,6 +1,7 @@
 import { BlobServiceClient } from "@azure/storage-blob"
 import {config } from "dotenv"
 import Airtable from "airtable"
+//falta guardar esta key en .env
 var base = new Airtable({apiKey: 'key0YgKxCfMCrEJb7'}).base('app8reXfkJsjntaEV')
 
 config()
@@ -23,6 +24,7 @@ export const uploadBlob = async (req, res) => {
 
         await blockBlobClient.upload(data, data.length)
 
+        //airtable
         base('Rec0rdings').create([
         {
             "fields": {
